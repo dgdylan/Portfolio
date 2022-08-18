@@ -46,7 +46,7 @@ const Projects = () => {
             </div>
             
             <div className="gradientTwo">
-              <img src={gradientTwo} alt="" />
+              <img draggable="false" src={gradientTwo} alt="" />
             </div>
 
         </div>

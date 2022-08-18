@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <div className="hero">
             <div className="gradientThree">
-                <img src={gradientThree} alt="" />
+                <img src={gradientThree} draggable="false" alt="" />
             </div>
             <div className="hero-text">
                 Development,
@@ -19,7 +19,7 @@ const Hero = () => {
                 <a className="resume-btn" href="#">View my Resume</a>
             </div>
             <div className="gradientOne">
-                <img src={gradientOne} alt="" />
+                <img src={gradientOne} draggable="false" alt="" />
             </div>
 
             <video loop muted autoPlay preload="auto">

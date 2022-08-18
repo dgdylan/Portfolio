@@ -13,6 +13,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+img {
+  pointer-events: none;
+}
+
 a {
 	-webkit-transition: color .25s linear;
 	-moz-transition: color .25s linear;
@@ -29,9 +33,12 @@ a {
 	z-index: 0;
 	position: absolute;
 	right: 0;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+  user-drag: none; 
   user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .gradientTwo {
@@ -41,9 +48,12 @@ a {
 	position: absolute;
 	left: 0;
   top: 15%;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+  user-drag: none; 
   user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .gradientThree {
@@ -55,9 +65,12 @@ a {
 	position: absolute;
 	left: 0;
 	top: 0;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+  user-drag: none; 
   user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .head {
@@ -74,7 +87,6 @@ a {
 	height: auto;
 	top: 0;
 	left: 0;
-	z-index: -1;
 }
 
 .logo {
@@ -141,7 +153,7 @@ h1 {
   justify-content: center;
   width: var(--size);
   height: var(--size);
-  stroke-width: 6;
+  stroke-width: 10;
 }
 
 .icon-group {
@@ -362,7 +374,7 @@ h1 {
 }
 
 .projects {
-  z-index: 2;
+  z-index: 1;
   position: relative;
 	padding: 2em 4em 4em 4em;
 }
