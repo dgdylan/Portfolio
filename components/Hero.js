@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 
 const Hero = () => {
     
@@ -43,9 +45,11 @@ const Hero = () => {
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nulla vitae mi finibus malesuada. Integer tempor ornare sem ac aliquet. Maecenas hendrerit volutpat enim vitae volutpat. Sed vulputate ipsum in ex aliquam fringilla.
                             </p>
                             <div className="flex flex-row text-right items-center gap-6 mt-2 justify-end">
-                                <p className='text-2xl font-bold text-themePurple'>
-                                    Software Engineer
-                                </p>
+                                <div className='text-2xl text-themePurple'>
+                                    <Link href='#'>
+                                        <FontAwesomeIcon icon={faGithub} />
+                                    </Link>
+                                </div>
                                 <div>
                                     {Divider('#808CFF')}
                                 </div>
