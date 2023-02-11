@@ -29,16 +29,27 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className='bg-white h-full mt-48'>
-                <div className="container mx-auto pt-6 font-bold">
+            <div className='bg-white mt-48'>
+                <div className="container mx-auto py-6 font-bold">
                     <h2 className='text-2xl text-darkBlue mb-2'>
                         About Me
                     </h2>
                     {Divider('#0b0916')}
-                    <div className="container bg-darkBlue mt-8 text-white flex p-6">
-                        
-                        <div className="flex">
+                    <div className="container h-auto bg-darkBlue mt-8 text-white flex">
+                        <img className='object-cover max-w-xs' src="/pfp.jpg" alt="" />
+                        <div className="flex flex-col text-right gap-4 p-8">
                             <h2 className='text-5xl'>Software Engineer</h2>
+                            <p className='font-medium'>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel nulla vitae mi finibus malesuada. Integer tempor ornare sem ac aliquet. Maecenas hendrerit volutpat enim vitae volutpat. Sed vulputate ipsum in ex aliquam fringilla.
+                            </p>
+                            <div className="flex flex-row text-right items-center gap-6 mt-2 justify-end">
+                                <p className='text-2xl font-bold text-themePurple'>
+                                    Software Engineer
+                                </p>
+                                <div>
+                                    {Divider('#808CFF')}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
